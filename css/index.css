@@ -16,6 +16,7 @@
     font-weight: 400;
     font-style: normal
 }
+
 @font-face {
     font-family: "BebasNeuePro";
     src: url("../fonts/BebasNeuePro-Regular.woff");
@@ -347,7 +348,6 @@ input:focus {
 .widget .container-header .header .nav-item.active span {
     color: black;
     opacity: 1
-
 }
 
 /* .widget .container-header .header .nav-item.active span::before {
@@ -400,10 +400,12 @@ input:focus {
     transform-origin: center bottom;
 
 }
+
 .header .nav span:hover::after {
-    width: 100%; 
+    width: 100%;
     left: 0;
 }
+
 /* .widget .container-header .header .nav-item span:hover::before:not(.disabled) {
     -webkit-transform: scaleX(1);
     transform: scaleX(1)
@@ -3963,6 +3965,7 @@ body,
 [data-tippy][data-tippy-size=jumbo]:before {
     font-size: 20px
 }
+
 /*# sourceMappingURL=index.css.map */
 
 
@@ -4004,4 +4007,90 @@ header {
     position: absolute;
     top: 18px;
 
+}
+
+
+/* ticket group */
+.list-group-item.GOOD {
+    height: 60px;
+}
+
+.list-group-item.GOOD .book-ticket-row {
+    left: 5%;
+    top: 29%;
+    margin-right: 10%;
+    /* position: absolute; */
+}
+
+.list-group-item.GOOD .book-ticket-place {
+    /* position: absolute; */
+    left: 25%;
+    top: 29%;
+    margin-right: 10%;
+}
+
+.list-group-item.GOOD .book-ticket-price {
+    /* padding-top: -25px; */
+    margin-right: 5%;
+    right: 20%;
+    top: 29%;
+    /* position: absolute; */
+}
+
+.list-group-item.GOOD .book-ticket-remove {
+    top: 25%;
+    right: 5%;
+    width: 30px;
+    font-size: 19px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D9D9D9;
+    margin-left: 10%;
+    /* position: absolute; */
+}
+
+.media-body {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.media-body button {
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+}
+
+@media(max-width: 480px) {
+    .media-body {
+        font-size: 12px;
+
+    }
+
+    .list-group-item.GOOD .book-ticket-remove {
+        width: 0px;
+        height: 20px;
+        right: 4%;
+        margin-left: 1%;
+        background-color: #D9D9D9;
+    }
+
+    .list-group-item.GOOD .book-ticket-row {
+        margin-right: 10%;
+        margin-left: -5%;
+        margin-top: 5px;
+    }
+
+    .list-group-item.GOOD .book-ticket-place {
+        margin-top: 5px;
+        margin-right: 5%;
+    }
+
+    .list-group-item.GOOD .book-ticket-price {
+        margin-top: 5px;
+    }
+
+    */
 }
